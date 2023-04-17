@@ -16,6 +16,10 @@
 		063AFB6029EDC47F003C6550 /* RapidBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB5F29EDC47F003C6550 /* RapidBookingTests.swift */; };
 		063AFB6A29EDC47F003C6550 /* RapidBookingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB6929EDC47F003C6550 /* RapidBookingUITests.swift */; };
 		063AFB6C29EDC47F003C6550 /* RapidBookingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB6B29EDC47F003C6550 /* RapidBookingUITestsLaunchTests.swift */; };
+		063AFB7929EDE1E2003C6550 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB7829EDE1E2003C6550 /* ContentViewModel.swift */; };
+		063AFB7C29EDE316003C6550 /* BookingCurrencyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB7B29EDE316003C6550 /* BookingCurrencyDataModel.swift */; };
+		063AFB8029EDE875003C6550 /* CurrenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB7F29EDE875003C6550 /* CurrenciesView.swift */; };
+		063AFB8229EDE8A7003C6550 /* CurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB8129EDE8A7003C6550 /* CurrenciesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		063AFB6529EDC47F003C6550 /* RapidBookingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RapidBookingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		063AFB6929EDC47F003C6550 /* RapidBookingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidBookingUITests.swift; sourceTree = "<group>"; };
 		063AFB6B29EDC47F003C6550 /* RapidBookingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidBookingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		063AFB7829EDE1E2003C6550 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		063AFB7B29EDE316003C6550 /* BookingCurrencyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCurrencyDataModel.swift; sourceTree = "<group>"; };
+		063AFB7F29EDE875003C6550 /* CurrenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesView.swift; sourceTree = "<group>"; };
+		063AFB8129EDE8A7003C6550 /* CurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				063AFB4929EDC45B003C6550 /* RapidBookingApp.swift */,
-				063AFB4B29EDC45B003C6550 /* ContentView.swift */,
-				063AFB4D29EDC47E003C6550 /* Assets.xcassets */,
+				063AFB7A29EDE2F2003C6550 /* Model */,
+				063AFB7D29EDE7CF003C6550 /* View */,
+				063AFB7E29EDE81E003C6550 /* View Model */,
 				063AFB5229EDC47E003C6550 /* Persistence.swift */,
+				063AFB4D29EDC47E003C6550 /* Assets.xcassets */,
 				063AFB5429EDC47E003C6550 /* RapidBooking.xcdatamodeld */,
 				063AFB4F29EDC47E003C6550 /* Preview Content */,
 			);
@@ -131,6 +141,32 @@
 				063AFB6B29EDC47F003C6550 /* RapidBookingUITestsLaunchTests.swift */,
 			);
 			path = RapidBookingUITests;
+			sourceTree = "<group>";
+		};
+		063AFB7A29EDE2F2003C6550 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				063AFB7B29EDE316003C6550 /* BookingCurrencyDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		063AFB7D29EDE7CF003C6550 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				063AFB4B29EDC45B003C6550 /* ContentView.swift */,
+				063AFB7F29EDE875003C6550 /* CurrenciesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		063AFB7E29EDE81E003C6550 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				063AFB7829EDE1E2003C6550 /* ContentViewModel.swift */,
+				063AFB8129EDE8A7003C6550 /* CurrenciesViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +301,12 @@
 			files = (
 				063AFB5329EDC47E003C6550 /* Persistence.swift in Sources */,
 				063AFB4C29EDC45B003C6550 /* ContentView.swift in Sources */,
+				063AFB7C29EDE316003C6550 /* BookingCurrencyDataModel.swift in Sources */,
+				063AFB8229EDE8A7003C6550 /* CurrenciesViewModel.swift in Sources */,
 				063AFB5629EDC47E003C6550 /* RapidBooking.xcdatamodeld in Sources */,
 				063AFB4A29EDC45B003C6550 /* RapidBookingApp.swift in Sources */,
+				063AFB8029EDE875003C6550 /* CurrenciesView.swift in Sources */,
+				063AFB7929EDE1E2003C6550 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
