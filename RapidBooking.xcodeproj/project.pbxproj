@@ -6,18 +6,6 @@
 	objectVersion = 55;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		063AFB4A29EDC45B003C6550 /* RapidBookingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB4929EDC45B003C6550 /* RapidBookingApp.swift */; };
-		063AFB4C29EDC45B003C6550 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB4B29EDC45B003C6550 /* ContentView.swift */; };
-		063AFB4E29EDC47E003C6550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063AFB4D29EDC47E003C6550 /* Assets.xcassets */; };
-		063AFB5129EDC47E003C6550 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063AFB5029EDC47E003C6550 /* Preview Assets.xcassets */; };
-		063AFB5329EDC47E003C6550 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB5229EDC47E003C6550 /* Persistence.swift */; };
-		063AFB5629EDC47E003C6550 /* RapidBooking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB5429EDC47E003C6550 /* RapidBooking.xcdatamodeld */; };
-		063AFB6029EDC47F003C6550 /* RapidBookingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB5F29EDC47F003C6550 /* RapidBookingTests.swift */; };
-		063AFB6A29EDC47F003C6550 /* RapidBookingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB6929EDC47F003C6550 /* RapidBookingUITests.swift */; };
-		063AFB6C29EDC47F003C6550 /* RapidBookingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB6B29EDC47F003C6550 /* RapidBookingUITestsLaunchTests.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		063AFB5C29EDC47F003C6550 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -37,17 +25,8 @@
 
 /* Begin PBXFileReference section */
 		063AFB4629EDC45B003C6550 /* RapidBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RapidBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		063AFB4929EDC45B003C6550 /* RapidBookingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidBookingApp.swift; sourceTree = "<group>"; };
-		063AFB4B29EDC45B003C6550 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		063AFB4D29EDC47E003C6550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		063AFB5029EDC47E003C6550 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		063AFB5229EDC47E003C6550 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		063AFB5529EDC47E003C6550 /* RapidBooking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RapidBooking.xcdatamodel; sourceTree = "<group>"; };
 		063AFB5B29EDC47F003C6550 /* RapidBookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RapidBookingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		063AFB5F29EDC47F003C6550 /* RapidBookingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidBookingTests.swift; sourceTree = "<group>"; };
 		063AFB6529EDC47F003C6550 /* RapidBookingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RapidBookingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		063AFB6929EDC47F003C6550 /* RapidBookingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidBookingUITests.swift; sourceTree = "<group>"; };
-		063AFB6B29EDC47F003C6550 /* RapidBookingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapidBookingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,9 +57,6 @@
 		063AFB3D29EDC45B003C6550 = {
 			isa = PBXGroup;
 			children = (
-				063AFB4829EDC45B003C6550 /* RapidBooking */,
-				063AFB5E29EDC47F003C6550 /* RapidBookingTests */,
-				063AFB6829EDC47F003C6550 /* RapidBookingUITests */,
 				063AFB4729EDC45B003C6550 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,44 +69,6 @@
 				063AFB6529EDC47F003C6550 /* RapidBookingUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		063AFB4829EDC45B003C6550 /* RapidBooking */ = {
-			isa = PBXGroup;
-			children = (
-				063AFB4929EDC45B003C6550 /* RapidBookingApp.swift */,
-				063AFB4B29EDC45B003C6550 /* ContentView.swift */,
-				063AFB4D29EDC47E003C6550 /* Assets.xcassets */,
-				063AFB5229EDC47E003C6550 /* Persistence.swift */,
-				063AFB5429EDC47E003C6550 /* RapidBooking.xcdatamodeld */,
-				063AFB4F29EDC47E003C6550 /* Preview Content */,
-			);
-			path = RapidBooking;
-			sourceTree = "<group>";
-		};
-		063AFB4F29EDC47E003C6550 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				063AFB5029EDC47E003C6550 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		063AFB5E29EDC47F003C6550 /* RapidBookingTests */ = {
-			isa = PBXGroup;
-			children = (
-				063AFB5F29EDC47F003C6550 /* RapidBookingTests.swift */,
-			);
-			path = RapidBookingTests;
-			sourceTree = "<group>";
-		};
-		063AFB6829EDC47F003C6550 /* RapidBookingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				063AFB6929EDC47F003C6550 /* RapidBookingUITests.swift */,
-				063AFB6B29EDC47F003C6550 /* RapidBookingUITestsLaunchTests.swift */,
-			);
-			path = RapidBookingUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +175,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				063AFB5129EDC47E003C6550 /* Preview Assets.xcassets in Resources */,
-				063AFB4E29EDC47E003C6550 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,10 +199,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				063AFB5329EDC47E003C6550 /* Persistence.swift in Sources */,
-				063AFB4C29EDC45B003C6550 /* ContentView.swift in Sources */,
-				063AFB5629EDC47E003C6550 /* RapidBooking.xcdatamodeld in Sources */,
-				063AFB4A29EDC45B003C6550 /* RapidBookingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				063AFB6029EDC47F003C6550 /* RapidBookingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,8 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				063AFB6A29EDC47F003C6550 /* RapidBookingUITests.swift in Sources */,
-				063AFB6C29EDC47F003C6550 /* RapidBookingUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +409,6 @@
 		063AFB7329EDC47F003C6550 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -500,7 +428,6 @@
 		063AFB7429EDC47F003C6550 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -520,7 +447,6 @@
 		063AFB7629EDC47F003C6550 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FGVTTM39Q;
@@ -538,7 +464,6 @@
 		063AFB7729EDC47F003C6550 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FGVTTM39Q;
@@ -593,19 +518,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		063AFB5429EDC47E003C6550 /* RapidBooking.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				063AFB5529EDC47E003C6550 /* RapidBooking.xcdatamodel */,
-			);
-			currentVersion = 063AFB5529EDC47E003C6550 /* RapidBooking.xcdatamodel */;
-			path = RapidBooking.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 063AFB3E29EDC45B003C6550 /* Project object */;
 }
