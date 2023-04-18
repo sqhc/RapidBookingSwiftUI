@@ -25,7 +25,7 @@ struct CurrenciesView: View {
         .onAppear(perform: vm.fetchCurrency)
         .alert(isPresented: $vm.hasError, error: vm.error) {
             Button {
-                
+                vm.fetchCurrency()
             } label: {
                 Text("Cancel")
             }
