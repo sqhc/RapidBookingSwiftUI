@@ -13,18 +13,18 @@ struct CurrenciesView: View {
     
     var body: some View {
         ZStack{
-            if vm.isLoading{
-                ProgressView()
-            }
-            else{
+            if let rates = vm.currency?.exchange_rates{
                 List{
-                    ForEach((vm.currency?.exchange_rates)!, id: \.currency){ rate in
+                    ForEach(rates, id: \.currency){ rate in
                         CurrencyItem(rate: rate.exchange_rate_buy ?? "Unknown", currency: rate.currency ?? "Unknown")
                             .listRowSeparator(.hidden)
                     }
                 }
                 .listStyle(.plain)
                 .navigationTitle("\(vm.currency?.base_currency_date ?? "Unknown")'s USD rate")
+            }
+            else{
+                ProgressView()
             }
         }
         .onAppear(perform: vm.fetchCurrency)

@@ -14,7 +14,6 @@ class CurrenciesViewModel: ObservableObject{
     @Published var currency: RapidCurrency?
     @Published var hasError: Bool = false
     @Published var error: LoadError?
-    @Published private(set) var isLoading = false
     
     private var bag = Set<AnyCancellable>()
     
@@ -24,7 +23,6 @@ class CurrenciesViewModel: ObservableObject{
             "X-RapidAPI-Key": "54217155a0mshc59ae06a0968327p12a4c1jsn682bd9007ac0",
             "X-RapidAPI-Host": "apidojo-booking-v1.p.rapidapi.com"
         ]
-        isLoading = true
         guard let url = URL(string: currencyURLString) else{
             hasError = true
             error = .optionalError
@@ -48,7 +46,6 @@ class CurrenciesViewModel: ObservableObject{
                 return currency
             })
             .sink(receiveCompletion: {[weak self] result in
-                defer{self?.isLoading = false}
                 switch result{
                 case .failure(let error):
                     self?.hasError = true

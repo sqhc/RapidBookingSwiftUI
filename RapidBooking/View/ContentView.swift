@@ -19,6 +19,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack{
+                Image(systemName: "dollarsign.circle")
+                    .font(.title)
                 Text("Check today's USD currency")
                     .font(.title)
                     .fontWeight(.semibold)
@@ -27,6 +29,10 @@ struct ContentView: View {
                     CurrenciesView()
                 } label: {
                     Text("Search for currencies")
+                        .frame(width: 200, height: 50, alignment: .center)
+                        .foregroundColor(.white)
+                        .background(Color.green)
+                        .cornerRadius(20)
                 }
 
                 Divider()
