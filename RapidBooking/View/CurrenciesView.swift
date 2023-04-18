@@ -16,6 +16,7 @@ struct CurrenciesView: View {
             List{
                 ForEach((vm.currency?.exchange_rates)!, id: \.currency){ rate in
                     CurrencyItem(rate: rate.exchange_rate_buy ?? "Unknown", currency: rate.currency ?? "Unknown")
+                        .listRowSeparator(.hidden)
                 }
             }
             .listStyle(.plain)
