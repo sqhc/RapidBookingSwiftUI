@@ -9,6 +9,7 @@ import Foundation
 
 struct RapidCurrency: Codable{
     let base_currency_date: String?
+    let exchange_rates: [CurrencyRate]?
 }
 
 struct CurrencyRate: Codable{

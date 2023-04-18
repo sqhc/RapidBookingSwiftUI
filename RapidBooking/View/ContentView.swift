@@ -19,23 +19,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack{
-                HStack {
-                    Text("Check today's USD currency")
-                        .font(.title)
-                        .fontWeight(.semibold)
-                    Button("Check USD Currency") {
-                        
-                    }
-                    .frame(width: 100, height: 50)
-                    .foregroundColor(.white)
-                    .background(Color.green)
-                    .cornerRadius(10)
+                Text("Check today's USD currency")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .frame(maxWidth: .infinity,  alignment: .leading)
+                NavigationLink {
+                    CurrenciesView()
+                } label: {
+                    Text("Search for currencies")
                 }
-                
-                HStack{
-                    
-                }
-                
+
+                Divider()
                 
             }
             .navigationTitle("Rapid Booking")
