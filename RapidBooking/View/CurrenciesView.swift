@@ -12,15 +12,20 @@ struct CurrenciesView: View {
     @StateObject private var vm = CurrenciesViewModel()
     
     var body: some View {
-        VStack{
-            List{
-                ForEach((vm.currency?.exchange_rates)!, id: \.currency){ rate in
-                    CurrencyItem(rate: rate.exchange_rate_buy ?? "Unknown", currency: rate.currency ?? "Unknown")
-                        .listRowSeparator(.hidden)
-                }
+        ZStack{
+            if vm.isLoading{
+                ProgressView()
             }
-            .listStyle(.plain)
-            .navigationTitle("\(vm.currency?.base_currency_date ?? "Unknown")'s USD rate")
+            else{
+                List{
+                    ForEach((vm.currency?.exchange_rates)!, id: \.currency){ rate in
+                        CurrencyItem(rate: rate.exchange_rate_buy ?? "Unknown", currency: rate.currency ?? "Unknown")
+                            .listRowSeparator(.hidden)
+                    }
+                }
+                .listStyle(.plain)
+                .navigationTitle("\(vm.currency?.base_currency_date ?? "Unknown")'s USD rate")
+            }
         }
         .onAppear(perform: vm.fetchCurrency)
         .alert(isPresented: $vm.hasError, error: vm.error) {
