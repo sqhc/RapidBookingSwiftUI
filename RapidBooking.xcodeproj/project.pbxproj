@@ -20,6 +20,7 @@
 		063AFB7C29EDE316003C6550 /* BookingCurrencyDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB7B29EDE316003C6550 /* BookingCurrencyDataModel.swift */; };
 		063AFB8029EDE875003C6550 /* CurrenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB7F29EDE875003C6550 /* CurrenciesView.swift */; };
 		063AFB8229EDE8A7003C6550 /* CurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB8129EDE8A7003C6550 /* CurrenciesViewModel.swift */; };
+		063AFB8429EF6A29003C6550 /* BookingLocationsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB8329EF6A29003C6550 /* BookingLocationsDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		063AFB7B29EDE316003C6550 /* BookingCurrencyDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingCurrencyDataModel.swift; sourceTree = "<group>"; };
 		063AFB7F29EDE875003C6550 /* CurrenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesView.swift; sourceTree = "<group>"; };
 		063AFB8129EDE8A7003C6550 /* CurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewModel.swift; sourceTree = "<group>"; };
+		063AFB8329EF6A29003C6550 /* BookingLocationsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingLocationsDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				063AFB7B29EDE316003C6550 /* BookingCurrencyDataModel.swift */,
+				063AFB8329EF6A29003C6550 /* BookingLocationsDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				063AFB4C29EDC45B003C6550 /* ContentView.swift in Sources */,
 				063AFB7C29EDE316003C6550 /* BookingCurrencyDataModel.swift in Sources */,
 				063AFB8229EDE8A7003C6550 /* CurrenciesViewModel.swift in Sources */,
+				063AFB8429EF6A29003C6550 /* BookingLocationsDataModel.swift in Sources */,
 				063AFB5629EDC47E003C6550 /* RapidBooking.xcdatamodeld in Sources */,
 				063AFB4A29EDC45B003C6550 /* RapidBookingApp.swift in Sources */,
 				063AFB8029EDE875003C6550 /* CurrenciesView.swift in Sources */,

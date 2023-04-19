@@ -15,7 +15,8 @@ struct ContentView: View {
 //        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
 //        animation: .default)
 //    private var items: FetchedResults<Item>
-
+    @StateObject var vm = ContentViewModel()
+    
     var body: some View {
         NavigationView {
             VStack{
@@ -24,7 +25,7 @@ struct ContentView: View {
                 Text("Check today's USD currency")
                     .font(.title)
                     .fontWeight(.semibold)
-                    .frame(maxWidth: .infinity,  alignment: .leading)
+                    .frame(maxWidth: .infinity,  alignment: .center)
                 NavigationLink {
                     CurrenciesView()
                 } label: {
@@ -36,6 +37,13 @@ struct ContentView: View {
                 }
 
                 Divider()
+                
+                Text("Search for Locations")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .frame(maxWidth: .infinity, alignment: .center)
+                TextField("Location name", text: $vm.location)
+                    .background(Color.gray)
                 
             }
             .navigationTitle("Rapid Booking")
