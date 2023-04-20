@@ -44,7 +44,15 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity, alignment: .center)
                 TextField("Location name", text: $vm.location)
                     .background(Color.gray)
-                
+                NavigationLink {
+                    LocationsView(vm: LocationsViewModel(location: vm.location))
+                } label: {
+                    Text("Search the locations")
+                        .frame(width: 200, height: 50, alignment: .center)
+                        .foregroundColor(.white)
+                        .background(Color.blue)
+                        .cornerRadius(20)
+                }
             }
             .navigationTitle("Rapid Booking")
         }

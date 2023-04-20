@@ -21,6 +21,8 @@
 		063AFB8029EDE875003C6550 /* CurrenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB7F29EDE875003C6550 /* CurrenciesView.swift */; };
 		063AFB8229EDE8A7003C6550 /* CurrenciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB8129EDE8A7003C6550 /* CurrenciesViewModel.swift */; };
 		063AFB8429EF6A29003C6550 /* BookingLocationsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB8329EF6A29003C6550 /* BookingLocationsDataModel.swift */; };
+		069B651A29F0700E003D15C4 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B651929F0700E003D15C4 /* LocationsView.swift */; };
+		069B651C29F070C6003D15C4 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B651B29F070C6003D15C4 /* LocationsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		063AFB7F29EDE875003C6550 /* CurrenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesView.swift; sourceTree = "<group>"; };
 		063AFB8129EDE8A7003C6550 /* CurrenciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewModel.swift; sourceTree = "<group>"; };
 		063AFB8329EF6A29003C6550 /* BookingLocationsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingLocationsDataModel.swift; sourceTree = "<group>"; };
+		069B651929F0700E003D15C4 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
+		069B651B29F070C6003D15C4 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +163,7 @@
 			children = (
 				063AFB4B29EDC45B003C6550 /* ContentView.swift */,
 				063AFB7F29EDE875003C6550 /* CurrenciesView.swift */,
+				069B651929F0700E003D15C4 /* LocationsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			children = (
 				063AFB7829EDE1E2003C6550 /* ContentViewModel.swift */,
 				063AFB8129EDE8A7003C6550 /* CurrenciesViewModel.swift */,
+				069B651B29F070C6003D15C4 /* LocationsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -309,6 +315,8 @@
 				063AFB8429EF6A29003C6550 /* BookingLocationsDataModel.swift in Sources */,
 				063AFB5629EDC47E003C6550 /* RapidBooking.xcdatamodeld in Sources */,
 				063AFB4A29EDC45B003C6550 /* RapidBookingApp.swift in Sources */,
+				069B651C29F070C6003D15C4 /* LocationsViewModel.swift in Sources */,
+				069B651A29F0700E003D15C4 /* LocationsView.swift in Sources */,
 				063AFB8029EDE875003C6550 /* CurrenciesView.swift in Sources */,
 				063AFB7929EDE1E2003C6550 /* ContentViewModel.swift in Sources */,
 			);
