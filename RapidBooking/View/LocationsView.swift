@@ -12,11 +12,13 @@ struct LocationsView: View {
     @ObservedObject var vm : LocationsViewModel
     
     var body: some View {
-        ZStack{
+        VStack{
             if vm.isLoading{
                 ProgressView()
             }
             else{
+                SearchPropertyPart()
+                
                 List{
                     ForEach(vm.locations, id: \.dest_id){ location in
                         LocationItem(location: location)
@@ -35,6 +37,7 @@ struct LocationsView: View {
             }
 
         }
+        .environmentObject(vm)
     }
 }
 
@@ -44,8 +47,30 @@ struct LocationsView_Previews: PreviewProvider {
     }
 }
 
+struct SearchPropertyPart: View{
+    
+    @EnvironmentObject var vm: LocationsViewModel
+    
+    var body: some View{
+        Text("Arrival Date:")
+            .frame(maxWidth: .infinity, alignment: .leading)
+        TextField("Arrival Date", text: $vm.arrivalDate)
+        Text("Departure Date:")
+            .frame(maxWidth: .infinity, alignment: .leading)
+        TextField("Departure Date", text: $vm.departureDate)
+        Text("Guest number:")
+            .frame(maxWidth: .infinity, alignment: .leading)
+        TextField("Guest qantity", text: $vm.guestQty)
+        Text("Room number:")
+            .frame(maxWidth: .infinity, alignment: .leading)
+        TextField("Room Quantity", text: $vm.roomQty)
+    }
+}
+
 struct LocationItem: View{
     let location: RapidLocation
+    
+    @EnvironmentObject var vm: LocationsViewModel
     
     var body: some View{
         VStack(alignment: .leading){

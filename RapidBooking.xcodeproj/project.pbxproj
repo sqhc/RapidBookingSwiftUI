@@ -23,6 +23,7 @@
 		063AFB8429EF6A29003C6550 /* BookingLocationsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063AFB8329EF6A29003C6550 /* BookingLocationsDataModel.swift */; };
 		069B651A29F0700E003D15C4 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B651929F0700E003D15C4 /* LocationsView.swift */; };
 		069B651C29F070C6003D15C4 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B651B29F070C6003D15C4 /* LocationsViewModel.swift */; };
+		069B651E29F1AF58003D15C4 /* PropertyListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B651D29F1AF58003D15C4 /* PropertyListDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		063AFB8329EF6A29003C6550 /* BookingLocationsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingLocationsDataModel.swift; sourceTree = "<group>"; };
 		069B651929F0700E003D15C4 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		069B651B29F070C6003D15C4 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		069B651D29F1AF58003D15C4 /* PropertyListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				063AFB7B29EDE316003C6550 /* BookingCurrencyDataModel.swift */,
 				063AFB8329EF6A29003C6550 /* BookingLocationsDataModel.swift */,
+				069B651D29F1AF58003D15C4 /* PropertyListDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				063AFB8229EDE8A7003C6550 /* CurrenciesViewModel.swift in Sources */,
 				063AFB8429EF6A29003C6550 /* BookingLocationsDataModel.swift in Sources */,
 				063AFB5629EDC47E003C6550 /* RapidBooking.xcdatamodeld in Sources */,
+				069B651E29F1AF58003D15C4 /* PropertyListDataModel.swift in Sources */,
 				063AFB4A29EDC45B003C6550 /* RapidBookingApp.swift in Sources */,
 				069B651C29F070C6003D15C4 /* LocationsViewModel.swift in Sources */,
 				069B651A29F0700E003D15C4 /* LocationsView.swift in Sources */,

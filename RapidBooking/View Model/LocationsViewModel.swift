@@ -15,6 +15,11 @@ class LocationsViewModel: ObservableObject{
     @Published var error : LoadError?
     @Published private(set) var isLoading = false
     
+    @Published var arrivalDate: String = ""
+    @Published var departureDate: String = ""
+    @Published var guestQty: String = ""
+    @Published var roomQty: String = ""
+    
     private var bag = Set<AnyCancellable>()
     
     init(location: String){
