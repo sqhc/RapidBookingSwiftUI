@@ -24,6 +24,8 @@
 		069B651A29F0700E003D15C4 /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B651929F0700E003D15C4 /* LocationsView.swift */; };
 		069B651C29F070C6003D15C4 /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B651B29F070C6003D15C4 /* LocationsViewModel.swift */; };
 		069B651E29F1AF58003D15C4 /* PropertyListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B651D29F1AF58003D15C4 /* PropertyListDataModel.swift */; };
+		06EF7BF729F20867003CE72D /* PropertiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EF7BF629F20867003CE72D /* PropertiesView.swift */; };
+		06EF7BF929F208BA003CE72D /* PropertiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EF7BF829F208BA003CE72D /* PropertiesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		069B651929F0700E003D15C4 /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		069B651B29F070C6003D15C4 /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		069B651D29F1AF58003D15C4 /* PropertyListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyListDataModel.swift; sourceTree = "<group>"; };
+		06EF7BF629F20867003CE72D /* PropertiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesView.swift; sourceTree = "<group>"; };
+		06EF7BF829F208BA003CE72D /* PropertiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 				063AFB4B29EDC45B003C6550 /* ContentView.swift */,
 				063AFB7F29EDE875003C6550 /* CurrenciesView.swift */,
 				069B651929F0700E003D15C4 /* LocationsView.swift */,
+				06EF7BF629F20867003CE72D /* PropertiesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				063AFB7829EDE1E2003C6550 /* ContentViewModel.swift */,
 				063AFB8129EDE8A7003C6550 /* CurrenciesViewModel.swift */,
 				069B651B29F070C6003D15C4 /* LocationsViewModel.swift */,
+				06EF7BF829F208BA003CE72D /* PropertiesViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -319,6 +325,8 @@
 				063AFB5629EDC47E003C6550 /* RapidBooking.xcdatamodeld in Sources */,
 				069B651E29F1AF58003D15C4 /* PropertyListDataModel.swift in Sources */,
 				063AFB4A29EDC45B003C6550 /* RapidBookingApp.swift in Sources */,
+				06EF7BF729F20867003CE72D /* PropertiesView.swift in Sources */,
+				06EF7BF929F208BA003CE72D /* PropertiesViewModel.swift in Sources */,
 				069B651C29F070C6003D15C4 /* LocationsViewModel.swift in Sources */,
 				069B651A29F0700E003D15C4 /* LocationsView.swift in Sources */,
 				063AFB8029EDE875003C6550 /* CurrenciesView.swift in Sources */,

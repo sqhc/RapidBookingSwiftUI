@@ -78,6 +78,16 @@ struct LocationItem: View{
                 .font(.largeTitle)
             Text("**Number of hotels** : \(location.hotels!)")
             AsyncImage(url: URL(string: location.image_url!))
+            NavigationLink {
+                PropertiesView(vm: PropertiesViewModel(arrivalDate: vm.arrivalDate, departureDate: vm.departureDate, guestQty: vm.guestQty, roomQty: vm.roomQty, dest_id: location.dest_id!, search_type: location.dest_type!))
+            } label: {
+                Text("Search properties")
+                    .frame(width: 200, height: 50, alignment: .center)
+                    .foregroundColor(.white)
+                    .background(Color.red)
+                    .cornerRadius(20)
+            }
+
         }
     }
 }
