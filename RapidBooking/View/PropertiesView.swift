@@ -57,8 +57,17 @@ struct PropertyItem: View{
                 Spacer()
                 Text("**CheckOut** : \(property.checkout.until!)")
             }
-            Text("**Rate** : \(property.review_score!)")
+            Text("**Rate** : \(property.review_score ?? 0.0)")
             AsyncImage(url: URL(string: property.main_photo_url!))
+            NavigationLink {
+                HotelDescriptionsView(vm: HotelDescriptionsViewModel(hotel_id: property.hotel_id!, checkIn: vm.arrivalDate, checkOut: vm.departureDate))
+            } label: {
+                Text("Descriptions")
+                    .frame(width: 100, height: 50, alignment: .center)
+                    .foregroundColor(.white)
+                    .background(Color.cyan)
+            }
+
         }
     }
 }
