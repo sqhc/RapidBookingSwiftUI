@@ -29,6 +29,7 @@
 		06EF7BFB29F35846003CE72D /* HotelDescriptionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EF7BFA29F35846003CE72D /* HotelDescriptionDataModel.swift */; };
 		06EF7BFD29F3596E003CE72D /* HotelDescriptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EF7BFC29F3596E003CE72D /* HotelDescriptionsView.swift */; };
 		06EF7BFF29F359BF003CE72D /* HotelDescriptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EF7BFE29F359BF003CE72D /* HotelDescriptionsViewModel.swift */; };
+		06EF7C0129F36C26003CE72D /* HotelReviewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06EF7C0029F36C26003CE72D /* HotelReviewDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		06EF7BFA29F35846003CE72D /* HotelDescriptionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDescriptionDataModel.swift; sourceTree = "<group>"; };
 		06EF7BFC29F3596E003CE72D /* HotelDescriptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDescriptionsView.swift; sourceTree = "<group>"; };
 		06EF7BFE29F359BF003CE72D /* HotelDescriptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelDescriptionsViewModel.swift; sourceTree = "<group>"; };
+		06EF7C0029F36C26003CE72D /* HotelReviewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelReviewDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				063AFB8329EF6A29003C6550 /* BookingLocationsDataModel.swift */,
 				069B651D29F1AF58003D15C4 /* PropertyListDataModel.swift */,
 				06EF7BFA29F35846003CE72D /* HotelDescriptionDataModel.swift */,
+				06EF7C0029F36C26003CE72D /* HotelReviewDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				063AFB8229EDE8A7003C6550 /* CurrenciesViewModel.swift in Sources */,
 				06EF7BFD29F3596E003CE72D /* HotelDescriptionsView.swift in Sources */,
 				063AFB8429EF6A29003C6550 /* BookingLocationsDataModel.swift in Sources */,
+				06EF7C0129F36C26003CE72D /* HotelReviewDataModel.swift in Sources */,
 				063AFB5629EDC47E003C6550 /* RapidBooking.xcdatamodeld in Sources */,
 				069B651E29F1AF58003D15C4 /* PropertyListDataModel.swift in Sources */,
 				06EF7BFB29F35846003CE72D /* HotelDescriptionDataModel.swift in Sources */,

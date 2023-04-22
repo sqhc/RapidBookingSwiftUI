@@ -19,6 +19,7 @@ struct HotelDescriptionsView: View {
                         Text(description.description ?? "Unknown")
                     }
                 }
+                .listStyle(.plain)
                 .navigationTitle(Text("Descriptions"))
             }
             else{
@@ -26,6 +27,13 @@ struct HotelDescriptionsView: View {
             }
         }
         .onAppear(perform: vm.fetchDescriptions)
+        .alert(isPresented: $vm.hasError, error: vm.error) {
+            Button {
+                
+            } label: {
+                Text("Cancel")
+            }
+        }
     }
 }
 
